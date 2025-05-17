@@ -9,9 +9,9 @@ export const ThemeSwitcher = ({ toggleDarkTheme }: ThemeSwitcherProps) => {
   return (
     <div className="flex justify-end relative z-10">
       <button
+        aria-label="Toggle dark mode"
         className="flex items-center justify-end gap-3 text-xs h-8 p-0 border-none bg-transparent -translate-y-6"
         onClick={toggleDarkTheme}
-      >
         <span className="hidden sm:block">
           <span className="hidden dark:block">DARK&nbsp;MODE&nbsp;ON</span>
           <span className="dark:hidden">LIGHT&nbsp;MODE&nbsp;ON</span>
