@@ -6,7 +6,8 @@ type ButtonVariant = "PRIMARY" | "SECONDARY";
 const buttonStyles = {
   PRIMARY:
     "py-2 md:py-3 px-3 md:px-4 rounded text-white bg-blue-800 dark:bg-blue-600 hover:bg-blue-600 active:bg-blue-600 hover:scale-105 active:scale-100 transition-all duration-300",
-  SECONDARY: "hover:scale-105 active:scale-100 transition-all duration-300",
+  SECONDARY:
+    "py-2 md:py-3 px-3 md:px-4 rounded bg-gray-200 dark:bg-gray-700 text-blue-800 dark:text-blue-500 font-normal border-transparent border-b-2 hover:scale-105 active:scale-100 transition-all duration-300",
 };
 
 interface ButtonProps {
