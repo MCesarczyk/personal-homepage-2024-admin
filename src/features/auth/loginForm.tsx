@@ -6,6 +6,8 @@ import {
   LOCAL_STORAGE_ACCESS_TOKEN,
   LOCAL_STORAGE_REFRESH_TOKEN,
 } from "./constants";
+import { Input } from "../../ui/atoms/input";
+import { Button } from "../../ui/atoms/button";
 
 export const LoginForm = () => {
   const navigate = useNavigate();
@@ -36,20 +38,12 @@ export const LoginForm = () => {
       onSubmit={handleSubmit}
     >
       <label htmlFor="username">Username</label>
-      <input
-        className="border-2 border-amber-50 rounded-xl p-4"
-        type="text"
-        id="username"
-        name="username"
-      />
+      <Input type="text" id="username" name="username" />
       <label htmlFor="password">Password</label>
-      <input
-        className="border-2 border-amber-50 rounded-xl p-4"
-        type="password"
-        id="password"
-        name="password"
-      />
-      <button type="submit">Submit</button>
+      <Input type="password" id="password" name="password" />
+      <Button variant="PRIMARY" type="submit">
+        Submit
+      </Button>
     </form>
   );
 };

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { ROUTES } from '../app/routes';
 import { skillsService } from '../features/skills/api/skillsService';
-import { List } from '../ui/list';
+import { List } from '../ui/molecules/list';
 
 export const DashboardPage = () => {
   const [skills, setSkills] = useState([]);
