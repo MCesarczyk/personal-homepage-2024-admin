@@ -12,7 +12,6 @@ import {
   LOCAL_STORAGE_ACCESS_TOKEN,
   LOCAL_STORAGE_REFRESH_TOKEN,
 } from '../features/auth/constants';
-import './styles.css';
 
 export function App() {
   const accessToken = localStorageService.getItem(LOCAL_STORAGE_ACCESS_TOKEN);
