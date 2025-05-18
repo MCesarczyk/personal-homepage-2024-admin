@@ -19,8 +19,8 @@ export function KanbanLane({ title, state, items }: KanbanLaneProps) {
         className="flex-1 flex flex-col gap-2 rounded-lg"
         ref={setNodeRef}
       >
-        {items.map((task) => (
-          <KanbanCard task={task} key={task.id} index={task.id} parent={state} />
+        {items.map((task, index) => (
+          <KanbanCard task={task} key={task.id} index={index} parent={state} />
         ))}
       </div>
     </div>
