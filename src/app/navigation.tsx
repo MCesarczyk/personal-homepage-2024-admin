@@ -14,14 +14,6 @@ export const Navigation = () => {
       <ul className="flex gap-4 p-4">
         <li>
           <Link
-            className={clsx(isPathActive(ROUTES.LOGIN) && 'text-red-500')}
-            to={ROUTES.LOGIN}
-          >
-            Login
-          </Link>
-        </li>
-        <li>
-          <Link
             className={clsx(isPathActive(ROUTES.DASHBOARD) && 'text-red-500')}
             to={ROUTES.DASHBOARD}
           >
