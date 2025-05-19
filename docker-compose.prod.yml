@@ -1,13 +1,12 @@
 services:
-  app:
-    image: ph24-admin
+  app-prod:
+    image: ph24-admin-prod
     container_name: personal-homepage-admin-prod
     build:
       context: .
       dockerfile: Dockerfile
-      target: development
     ports:
-      - "7600:3000"
+      - "9600:80"
     environment:
       - NODE_ENV=production
     env_file:

@@ -1,5 +1,5 @@
 services:
-  app:
+  app-dev:
     image: ph24-admin-dev
     container_name: personal-homepage-admin-dev
     build:
