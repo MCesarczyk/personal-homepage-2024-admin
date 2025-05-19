@@ -18,7 +18,6 @@ build
 .DS_Store
 
 # Ignore Docker-related files that are not needed in the final image
-Dockerfile.bak
 Dockerfile.tmp
 docker-compose.*
 
