@@ -11,8 +11,6 @@ services:
       - NODE_ENV=production
     env_file:
       - .env.production
-    volumes:
-      - ./app:/usr/src/app
     restart: always
     networks:
       - personal-homepage-2024
