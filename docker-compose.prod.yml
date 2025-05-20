@@ -1,0 +1,21 @@
+services:
+  app-prod:
+    image: ph24-admin-prod
+    container_name: personal-homepage-admin-prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9600:80"
+    environment:
+      - NODE_ENV=production
+    env_file:
+      - .env.production
+    restart: always
+    networks:
+      - personal-homepage-2024
+
+networks:
+  personal-homepage-2024:
+    external: true
+    name: personal-homepage-2024
